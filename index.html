@@ -1,77 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Airline Reservation System</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Airline Reservation System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>✈ Airline Reservation System</h1>
+    </header>
 
-<header>
-<h1>✈ Airline Reservation System</h1>
-</header>
+    <div class="container">
+      <div class="form-box">
+        <h2>Book Your Flight</h2>
 
-<div class="container">
+        <form id="bookingForm">
+          <input type="text" id="name" placeholder="Passenger Name" required />
 
-<div class="form-box">
+          <select id="from">
+            <option value="">From</option>
+            <option>Kathmandu</option>
+            <option>Delhi</option>
+            <option>Dubai</option>
+            <option>Bangkok</option>
+          </select>
 
-<h2>Book Your Flight</h2>
+          <select id="to">
+            <option value="">To</option>
+            <option>London</option>
+            <option>Tokyo</option>
+            <option>Singapore</option>
+            <option>New York</option>
+          </select>
 
-<form id="bookingForm">
+          <input type="date" id="date" />
 
-<input type="text" id="name" placeholder="Passenger Name" required>
+          <select id="class">
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+          </select>
 
+          <button type="submit">Book Flight</button>
+        </form>
+      </div>
 
-<select id="from">
-<option value="">From</option>
-<option>Kathmandu</option>
-<option>Delhi</option>
-<option>Dubai</option>
-<option>Bangkok</option>
-</select>
+      <div class="ticket-box">
+        <h2>Booked Tickets</h2>
 
-<select id="to">
-<option value="">To</option>
-<option>London</option>
-<option>Tokyo</option>
-<option>Singapore</option>
-<option>New York</option>
-</select>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Date</th>
+              <th>Class</th>
+            </tr>
+          </thead>
 
-<input type="date" id="date">
+          <tbody id="ticketList"></tbody>
+        </table>
+      </div>
+    </div>
 
-<select id="class">
-<option>Economy</option>
-<option>Business</option>
-<option>First Class</option>
-</select>
-
-<button type="submit">Book Flight</button>
-
-</form>
-
-</div>
-
-<div class="ticket-box">
-
-<h2>Booked Tickets</h2>
-
-<table>
-
-    <thead>
-<tr>
-<th>Name</th>
-<th>From</th>
-<th>To</th>
-<th>Date</th>
-<th>Class</th>
-</tr>
-</thead>
-
-
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
