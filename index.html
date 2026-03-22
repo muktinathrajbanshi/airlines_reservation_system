@@ -9,6 +9,7 @@
   <body>
     <header>
       <h1>✈ Airline Reservation System</h1>
+      <button id="darkToggle">🌙 Dark Mode</button>
     </header>
 
     <div class="container">
@@ -18,7 +19,7 @@
         <form id="bookingForm">
           <input type="text" id="name" placeholder="Passenger Name" required />
 
-          <select id="from">
+          <select id="from" required>
             <option value="">From</option>
             <option>Kathmandu</option>
             <option>Delhi</option>
@@ -26,7 +27,7 @@
             <option>Bangkok</option>
           </select>
 
-          <select id="to">
+          <select id="to" required>
             <option value="">To</option>
             <option>London</option>
             <option>Tokyo</option>
@@ -34,7 +35,7 @@
             <option>New York</option>
           </select>
 
-          <input type="date" id="date" />
+          <input type="date" id="date" required />
 
           <select id="class">
             <option>Economy</option>
@@ -49,14 +50,20 @@
       <div class="ticket-box">
         <h2>Booked Tickets</h2>
 
+        <input type="text" id="search" placeholder="Search by name..." />
+
+        <button onclick="downloadCSV()">⬇ Export CSV</button>
+
         <table>
           <thead>
             <tr>
+              <th>ID</th>
               <th>Name</th>
               <th>From</th>
               <th>To</th>
               <th>Date</th>
               <th>Class</th>
+              <th>Action</th>
             </tr>
           </thead>
 
