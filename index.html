@@ -13,6 +13,7 @@
     </header>
 
     <div class="container">
+      <!-- FORM -->
       <div class="form-box">
         <h2>Book Your Flight</h2>
 
@@ -47,6 +48,7 @@
         </form>
       </div>
 
+      <!-- TICKETS -->
       <div class="ticket-box">
         <h2>Booked Tickets</h2>
 
@@ -54,21 +56,23 @@
 
         <button onclick="downloadCSV()">⬇ Export CSV</button>
 
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>From</th>
-              <th>To</th>
-              <th>Date</th>
-              <th>Class</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-
-          <tbody id="ticketList"></tbody>
-        </table>
+        <!-- ✅ IMPORTANT WRAPPER -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Date</th>
+                <th>Class</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="ticketList"></tbody>
+          </table>
+        </div>
       </div>
     </div>
 
