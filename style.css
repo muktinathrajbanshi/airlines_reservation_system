@@ -153,8 +153,27 @@ tr:hover {
 
 /* 720px */
 @media (max-width: 720px) {
+  header {
+    padding: 15px;
+  }
+
   header h1 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .form-box h2,
+  .ticket-box h2 {
+    font-size: 18px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
   }
 }
 
